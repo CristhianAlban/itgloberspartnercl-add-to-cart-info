@@ -12,11 +12,14 @@ const AddToCartInfo = () => {
     totalizers
   } } = useOrderForm()
   console.log("este producto tiene esta info", productInfo)
-  console.log("esta es mi informacion de la orden: ",items, totalizers)
+  console.log("estos son mis totales:" , totalizers)
   return (
     <>
-      <ProductGroup />
-      <Totalizers />
+      <ProductGroup products={items}/>
+      <Totalizers
+      totalizers={totalizers[0]}
+      items={items.length}
+      />
       <ButtonGroup />
     </>
   )
