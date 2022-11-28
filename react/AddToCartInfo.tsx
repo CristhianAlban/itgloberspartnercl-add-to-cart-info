@@ -1,4 +1,3 @@
-import React from "react";
+import AddToCartInfo from "./components/AddToCartInfo";
 
-const AddToCartInfo = () => <div>ESTE ES EL COMPONENTE</div>
 export default AddToCartInfo
